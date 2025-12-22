@@ -2,10 +2,9 @@
 set -e    # Exit immediately if any command fails. This ensures the script stops on the first error.
 
 echo "-----------------------------------------------------"
-echo " STEP 1: Installing Amazon Corretto Java 21 Headless"
+echo " STEP 1: Installing Amazon Corretto Java 21 Devel"
 echo "-----------------------------------------------------"
 # Use DNF to install the specified Java package silently (-y).
-# 'headless' means it's the Java Runtime Environment (JRE) without GUI components, ideal for servers.
 sudo dnf install java-21-amazon-corretto-devel -y
 
 # Check the exit status ($?) of the last executed command (dnf install).
