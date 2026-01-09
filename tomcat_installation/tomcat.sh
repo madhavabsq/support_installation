@@ -126,3 +126,11 @@ echo "  Checking Tomcat Status"
 echo "----------------------------------------"
 
 sudo systemctl status tomcat --no-pager
+
+
+
+#CATALINA_HOME=/usr/share/tomcat10
+export JAVA_HOME
+export CATALINA_HOME
+PATH=$JAVA_HOME/bin:$CATALINA_HOME/bin:$PATH
+export PATH
